@@ -4,9 +4,15 @@ p=int(raw_input())
 
 agg=1
 
-for i in range(0,p):
+if(p<>0):
 	
-	agg=agg*x
-
+	for i in range(0,p):
+		
+		agg=agg*x
+	
 print(agg)
 
+
+else:
+	
+	print(agg)
