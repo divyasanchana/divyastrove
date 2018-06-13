@@ -1,5 +1,7 @@
-string1=input()
-string2=input()
+x=input()
+string=x.split(" ")
+string1=string[0]
+string2=string[1]
 n1=len(string1)
 n2=len(string2)
 lst1=list(string1)
