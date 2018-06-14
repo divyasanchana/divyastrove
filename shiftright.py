@@ -7,10 +7,9 @@ def main():
 	K=int(K)
 	l=input()
 	l=l.split(" ")
-	print(l)
 	for i in range(0,K):
 		shift(l,N)
-	print(l)
+	print(' '.join(l))
 def shift(l,N):
 	temp=l[N-1]
 	for i in range(N-1,0,-1):
