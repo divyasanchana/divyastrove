@@ -4,17 +4,17 @@ lst=input()
 lst=lst.split(" ")
 s=set(lst)
 s=list(s)
-sort=sorted(s)
-M=len(sort)
-answer=[]
+sor=sorted(s)
+M=len(sor)
+ans=[]
 for i in range(0,M):
 	count=0
 	for j in range(0,N):
-		if sort[i]==lst[j]:
+		if sor[i]==lst[j]:
 			count=count+1
 	if count>1:
-		answer.append(sort[i])
-if len(answer)==0:
+		ans.append(sor[i])
+if len(ans)==0:
 	print("unique")
 else:
-	print(" ".join(answer))
+	print(" ".join(ans))
