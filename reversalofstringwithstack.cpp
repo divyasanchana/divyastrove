@@ -67,21 +67,23 @@ return 0;
 int main() 
 {
 stack s;
-int len,i;
-string str1;
+int len,i,j;
+char str1[100];
 char pushv;
-cout<<"Enter the length of the string\n";
-cin>>len;
+char print,str2[100]={'\0'};
 cout<<"Enter the string:\n";
-getline(cin,str1);
-cout<<str1;
-for(i=0;i<len;i++)
+cin.get(str1,100);
+cout<<str1<<endl;
+for(i=0;str1[i]!='\0';i++)
 {
 	pushv=str1[i];
 	s.push(pushv);
-	cout<<pushv<<" was successfully pushed\n";
 }
 cout<<"The reversed string:\n";
-s.display();
+for(i=0;str1[i]!='\0';i++)
+{print=s.pop();
+ str2[i]=print;
+}
+cout<<str2;
 return 0;
 }
